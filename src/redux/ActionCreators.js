@@ -1,46 +1,36 @@
 import * as ActionTypes from './ActionTypes';
 import { baseUrl } from '../shared/baseurl';
+import axios from 'axios';
 
 export const addComment = (comment) => ({
     type: ActionTypes.ADD_COMMENT,
     payload: comment
 });
 
-export const postComment = (dishId, rating, author, comment) => (dispatch) => {           //why use dispatch thunk
-
+export const postComment = (dishId, rating, author, comment) => (dispatch) => {
     const newComment = {
-        dishId: dishId,
-        rating: rating,
-        author: author,
-        comment: comment
+      dishId: dishId,
+      rating: rating,
+      author: author,
+      comment: comment,
     };
     newComment.date = new Date().toISOString();
-    
-    return fetch(baseUrl + 'comments', {
-        method: "POST",
-        body: JSON.stringify(newComment),
+  
+    axios
+      .post(baseUrl + 'comments', newComment, {
         headers: {
-          "Content-Type": "application/json"
+          'Content-Type': 'application/json',
         },
-        credentials: "same-origin"
-    })
-    .then(response => {
-        if (response.ok) {
-          return response;
-        } else {
-          var error = new Error('Error ' + response.status + ': ' + response.statusText);
-          error.response = response;
-          throw error;
-        }
-      },
-      error => {
-            throw error;
+        withCredentials: true, // For "same-origin" credentials
       })
-    .then(response => response.json())
-    .then(response => dispatch(addComment(response)))
-    .catch(error =>  { console.log('post comments', error.message);
-     alert('Your comment could not be posted\nError: '+error.message); });
-};
+      .then((response) => {
+        dispatch(addComment(response.data));
+      })
+      .catch((error) => {
+        console.log('post comments', error.message);
+        alert('Your comment could not be posted\nError: ' + error.message);
+      });
+  };
 
 export const postFeedback = (firstname, lastname, telnum, email, agree, contactType, message, id) => {           //why use dispatch thunk
 
@@ -301,43 +291,37 @@ export const addMovies = (movies) => ({
     payload: movies
 });
 
-export const postReviews = (dishId, rating, author, comment) => (dispatch) => {           //why use dispatch thunk
-
-    const newReviews = {
-        dishId: dishId,
-        rating: rating,
-        author: author,
-        comment: comment
+export const postReviews = (dishId, rating, author, comment) => (dispatch) => {
+    const newReview = {
+      dishId: dishId,
+      rating: rating,
+      author: author,
+      comment: comment,
     };
-    newReviews.date = new Date().toISOString();
-    
-    return fetch(baseUrl + 'reviews', {
-        method: "POST",
-        body: JSON.stringify(newReviews),
+    newReview.date = new Date().toISOString();
+  
+    axios
+      .post(baseUrl + 'reviews', newReview, {
         headers: {
-          "Content-Type": "application/json"
+          'Content-Type': 'application/json',
         },
-        credentials: "same-origin"
-    })
-    .then(response => {
-        if (response.ok) {
-          return response;
-        } else {
-          var error = new Error('Error ' + response.status + ': ' + response.statusText);
-          error.response = response;
-          throw error;
-        }
-      },
-      error => {
-            throw error;
+        withCredentials: true, // For "same-origin" credentials
       })
-    .then(response => response.json())
-    .then(response => dispatch(addReviews(response)))
-    .catch(error =>  { console.log('post reviews', error.message);
-     alert('Your review could not be posted\nError: '+ error.message); });
-};
+      .then((response) => {
+        dispatch(addReview(response.data));
+      })
+      .catch((error) => {
+        console.log('post review', error.message);
+        alert('Your review could not be posted\nError: ' + error.message);
+      });
+  };
 
-export const fetchReviews = () => (dispatch) => {    
+  export const addReview = (review) => ({
+    type: ActionTypes.ADD_REVIEW,
+    payload: review
+    });
+
+  export const fetchReviews = () => (dispatch) => {    
     return fetch(baseUrl + 'reviews')
     .then(response => {
         if (response.ok) {

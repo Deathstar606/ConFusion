@@ -9,7 +9,7 @@ function RenderLeader({leader}) {
       <div className="col-12 mt-5">
           <Media tag="li">
               <Media left middle>
-                  <Media object className='carousel' src={baseUrl + leader.image} alt={leader.name} />
+                  <Media object className='carousel aboutimg' src={baseUrl + leader.image} alt={leader.name} />
               </Media>
               <Media body className="col-12">
                   <Media heading>{leader.name}</Media>
@@ -66,45 +66,29 @@ else if (props.leaders.errMess) {
           </div>
           <div className="row row-content">
               <div className="col-12 col-md-6">
-                  <h2>Our History</h2>
-                  <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
-                  <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
+                  <h2>Our Application</h2>
+                  <p>"Codex" is an innovative web application built on the React framework that aims to revolutionize the way users consume content online. The project's primary goal is to provide a seamless, intuitive, and interactive news browsing experience, keeping users engaged and able leave their on reviews/comments on products/contents.</p>
+                  <p>This project was our first react application used for our software development course.It is a work in progress so some 🐞s are yet to squished.</p>
               </div>
               <div className="col-12 col-md-5">
                   <Card>
                       <CardHeader className="bg-dark text-white">Facts At a Glance</CardHeader>
                       <CardBody>
                           <dl className="row p-1">
-                              <dt className="col-6">Started</dt>
-                              <dd className="col-6">3 Feb. 2013</dd>
-                              <dt className="col-6">Major Stake Holder</dt>
-                              <dd className="col-6">HK Fine Foods Inc.</dd>
-                              <dt className="col-6">Last Year's Turnover</dt>
-                              <dd className="col-6">$1,250,375</dd>
-                              <dt className="col-6">Employees</dt>
-                              <dd className="col-6">40</dd>
+                              <dt className="col-6">App Based On</dt>
+                              <dd className="col-6">React</dd>
+                              <dt className="col-6">Hosted By</dt>
+                              <dd className="col-6">Json Server</dd>
+                              <dt className="col-6">Contributors</dt>
+                              <dd className="col-6">4</dd>
                           </dl>
-                      </CardBody>
-                  </Card>
-              </div>
-              <div className="col-12">
-                  <Card>
-                      <CardBody className="bg-faded">
-                          <blockquote className="blockquote">
-                              <p className="mb-0">You better cut the pizza in four pieces because
-                                  I'm not hungry enough to eat six.</p>
-                              <footer className="blockquote-footer">Yogi Berra,
-                              <cite title="Source Title">The Wit and Wisdom of Yogi Berra,
-                                  P. Pepe, Diversion Books, 2014</cite>
-                              </footer>
-                          </blockquote>
                       </CardBody>
                   </Card>
               </div>
           </div>
           <div className="row row-content">
               <div className="col-12">
-                  <h2>Corporate Leadership</h2>
+                  <h2>People Who Contributed</h2>
               </div>
               <div className="col-12">
                   <Media list>

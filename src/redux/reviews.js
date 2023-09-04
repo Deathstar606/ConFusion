@@ -8,7 +8,7 @@ export const Reviews = (state = { errMess: null, reviews:[]}, action) => {
     case ActionTypes.REVIEWS_FAILED:
       return {...state, errMess: action.payload};
 
-    case ActionTypes.ADD_REVIEWS:
+    case ActionTypes.ADD_REVIEW:
         var review = action.payload;
         return { ...state, reviews: state.reviews.concat(review)};
 

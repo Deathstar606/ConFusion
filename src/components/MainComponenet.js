@@ -74,7 +74,7 @@ class Main extends Component {
     />
     )
   }
-
+  console.log(this.props.reviews.reviews)
   const RevWithId = ({match}) => {
     return(
       <ReviewDetail dish={this.props.movies.movies.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]}

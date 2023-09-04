@@ -58,7 +58,7 @@ function Content(props) {
                 <div className="container">
                     <div className="row row-header">
                     <div className="col-12">
-                        <h1>Content</h1>
+                        <h1>Contents</h1>
                         <p className="typewriter">Only Games & Movies for Now *_*</p>
                     </div>
                     </div>
@@ -68,7 +68,7 @@ function Content(props) {
             <div className="row">
                 <Breadcrumb>
                     <BreadcrumbItem><Link to='/home'>Home</Link></BreadcrumbItem>
-                    <BreadcrumbItem active>Content</BreadcrumbItem>
+                    <BreadcrumbItem active>Contents</BreadcrumbItem>
                 </Breadcrumb>
                 <div className="col-12">
                     <h3>Select Catagory</h3>

@@ -16,6 +16,7 @@ export const CONTENTS_LOADING = 'CONTENTS_LOADING';
 export const ADD_MOVIES = 'ADD_MOVIES';
 export const MOVIES_FAILED = 'MOVIES_FAILED';
 export const MOVIES_LOADING = 'MOVIES_LOADING';
+export const ADD_REVIEW = 'ADD_REVIEW';
 export const ADD_REVIEWS = 'ADD_REVIEWS';
 export const REVIEWS_FAILED = 'REVIEWS_FAILED';
 export const ADD_FEATURES = 'ADD_FEATURES';
