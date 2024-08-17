@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/ConFusion_Front/static/css/main.5a47e271.css",
+    "main.js": "/ConFusion_Front/static/js/main.5f3a9678.js",
+    "static/js/787.e43f9d71.chunk.js": "/ConFusion_Front/static/js/787.e43f9d71.chunk.js",
+    "static/media/menu.jpg": "/ConFusion_Front/static/media/menu.d3bc8693150ad821b643.jpg",
+    "static/media/pexels-narda-yescas-724842-1566837.jpg": "/ConFusion_Front/static/media/pexels-narda-yescas-724842-1566837.9c50b890adbd8885e5a5.jpg",
+    "static/media/pexels-fotios-photos-776538.jpg": "/ConFusion_Front/static/media/pexels-fotios-photos-776538.4ce728183f8d05e2f037.jpg",
+    "static/media/specials.jpg": "/ConFusion_Front/static/media/specials.9e262bce7b2bc864f1d3.jpg",
+    "static/media/pexels-reneasmussen-1581384.jpg": "/ConFusion_Front/static/media/pexels-reneasmussen-1581384.00920011518746ef5b52.jpg",
+    "static/media/14 about.jpg": "/ConFusion_Front/static/media/14 about.6b16e07675be790fbd6f.jpg",
+    "static/media/pexels-pixabay-262047.jpg": "/ConFusion_Front/static/media/pexels-pixabay-262047.77414a0bbf8dd3697821.jpg",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/ConFusion_Front/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/14.jpg": "/ConFusion_Front/static/media/14.0df15ec6c8da5d5fc4d4.jpg",
+    "static/media/pexels-pixabay-260922.jpg": "/ConFusion_Front/static/media/pexels-pixabay-260922.ad43cd4fead0348d2557.jpg",
+    "static/media/deliver.jpg": "/ConFusion_Front/static/media/deliver.2427b471ea7985ae4be5.jpg",
+    "static/media/fontawesome-webfont.eot": "/ConFusion_Front/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/ConFusion_Front/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/ConFusion_Front/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/ConFusion_Front/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "index.html": "/ConFusion_Front/index.html",
+    "main.5a47e271.css.map": "/ConFusion_Front/static/css/main.5a47e271.css.map",
+    "main.5f3a9678.js.map": "/ConFusion_Front/static/js/main.5f3a9678.js.map",
+    "787.e43f9d71.chunk.js.map": "/ConFusion_Front/static/js/787.e43f9d71.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a47e271.css",
+    "static/js/main.5f3a9678.js"
+  ]
+}
