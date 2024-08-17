@@ -1,0 +1,226 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.row-header{
+  font-family: "Ceviche One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.row-content {
+  margin:0px auto;
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px ridge;
+  min-height:400px;
+}
+
+address{
+  font-size:80%;
+  margin:0px;
+  color:#0f0f0f;
+}
+
+.page-enter {
+  opacity: 0.01;
+  transform: translateX(-100%);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: all 300ms ease-in;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.page-exit-active {
+  opacity: 0.01;
+  transform: translateX(100%);
+  transition: all 300ms ease-out;
+}
+
+/* .slide-with-filter {
+  filter: brightness(0.5);
+} */
+
+.butt {
+  border: 2px solid rgb(255, 193, 0);
+  color: rgb(255, 193, 0);
+  background: none;
+  padding: 2px 20px;
+  font-size: 17px;
+  cursor: pointer;
+  margin: 5px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-butt .butt {
+  border: 2px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
+.butt:hover {
+  color: rgb(255, 193, 0);
+  border: 2px solid transparent;
+  background: black;
+}
+
+.butt::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #000000;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.nav-c {
+  margin: 10px;
+  background-color: #000000;
+  position: fixed;
+  width: calc(100% - 20px);
+  z-index: 999;
+}
+
+.nav-items {
+  color: rgb(255, 193, 0);
+  margin-top: 10px;
+  margin-right: 5px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.nav-items.active {
+  color: #000000; /* Green color for active link */
+  background-color: rgb(255, 193, 0);
+}
+
+.nav-items:hover {
+  color: #000000;
+}
+
+.nav-items-inner {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: -100px;
+  bottom: -7px;
+  background: rgb(255, 193, 0);
+  z-index: -1;
+  transition: left 0.3s ease;
+}
+
+.nav-items:hover .nav-items-inner {
+  left: 0px; /* Slide the inner element to the right on hover */
+}
+
+.contents {
+  width: 100%;
+}
+
+.modal-back {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+}
+
+.modal-content {
+  background-color: rgb(255, 193, 0);
+  border: black solid 2px;
+  position: relative;
+  min-width: auto; /* Default minWidth */
+}
+
+@media (max-width: 640px) {
+  .modal-content {
+    min-width: 80vw;
+    max-height: 90vh;
+  }
+}
+
+.swiper-pagination {
+  padding-bottom: 30px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgb(255, 193, 0, 0.8);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgb(255, 193, 0);
+}
+
+.custom-pagination-bullet {
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.custom-pagination-bullet:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.dropdown-toggle {
+  color: #000000;
+  border: 2px solid #000000;
+  font-weight: 12px;
+}
+
+.menu-image-container {
+  position: relative;
+  width: 100%; /* Or any fixed width you prefer */
+  padding-top: 75%; /* This creates the 4:3 aspect ratio */
+  overflow: hidden;
+}
+
+.menu-image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: center; /* Ensures the image covers the container */
+}
+/* NotificationBubble.css */
+.bubble {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.seat-col {
+  cursor: pointer;
+  border: 2px solid transparent; /* Default border */
+  transition: border 0.3s ease; /* Smooth transition for border change */
+  padding: 10px 10px 0px 10px; /* Top, Right, Bottom, Left */
+}
+
+.seat-col.selected {
+  border: 2px solid black;
+  padding: 10px 10px 0px 10px; /* Black border for selected seat */
+}
