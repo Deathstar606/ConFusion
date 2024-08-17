@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/ConFusion_Front/static/css/main.5a47e271.css",
-    "main.js": "/ConFusion_Front/static/js/main.f9a50d55.js",
-    "static/js/787.e43f9d71.chunk.js": "/ConFusion_Front/static/js/787.e43f9d71.chunk.js",
-    "static/media/pexels-fotios-photos-776538.jpg": "/ConFusion_Front/static/media/pexels-fotios-photos-776538.4ce728183f8d05e2f037.jpg",
-    "static/media/pexels-reneasmussen-1581384.jpg": "/ConFusion_Front/static/media/pexels-reneasmussen-1581384.00920011518746ef5b52.jpg",
-    "static/media/pexels-pixabay-262047.jpg": "/ConFusion_Front/static/media/pexels-pixabay-262047.77414a0bbf8dd3697821.jpg",
-    "static/media/fontawesome-webfont.svg?v=4.7.0": "/ConFusion_Front/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
-    "static/media/pexels-pixabay-260922.jpg": "/ConFusion_Front/static/media/pexels-pixabay-260922.ad43cd4fead0348d2557.jpg",
-    "static/media/fontawesome-webfont.eot": "/ConFusion_Front/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
-    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/ConFusion_Front/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
-    "static/media/fontawesome-webfont.woff?v=4.7.0": "/ConFusion_Front/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
-    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/ConFusion_Front/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
-    "index.html": "/ConFusion_Front/index.html",
-    "main.5a47e271.css.map": "/ConFusion_Front/static/css/main.5a47e271.css.map",
-    "main.f9a50d55.js.map": "/ConFusion_Front/static/js/main.f9a50d55.js.map",
-    "787.e43f9d71.chunk.js.map": "/ConFusion_Front/static/js/787.e43f9d71.chunk.js.map"
+    "main.css": "/ConFusion/static/css/main.83d9c3e3.css",
+    "main.js": "/ConFusion/static/js/main.f3372357.js",
+    "static/js/787.e43f9d71.chunk.js": "/ConFusion/static/js/787.e43f9d71.chunk.js",
+    "static/media/pexels-fotios-photos-776538.jpg": "/ConFusion/static/media/pexels-fotios-photos-776538.4ce728183f8d05e2f037.jpg",
+    "static/media/pexels-reneasmussen-1581384.jpg": "/ConFusion/static/media/pexels-reneasmussen-1581384.00920011518746ef5b52.jpg",
+    "static/media/pexels-pixabay-262047.jpg": "/ConFusion/static/media/pexels-pixabay-262047.77414a0bbf8dd3697821.jpg",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/ConFusion/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/pexels-pixabay-260922.jpg": "/ConFusion/static/media/pexels-pixabay-260922.ad43cd4fead0348d2557.jpg",
+    "static/media/fontawesome-webfont.eot": "/ConFusion/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/ConFusion/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/ConFusion/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/ConFusion/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "index.html": "/ConFusion/index.html",
+    "main.83d9c3e3.css.map": "/ConFusion/static/css/main.83d9c3e3.css.map",
+    "main.f3372357.js.map": "/ConFusion/static/js/main.f3372357.js.map",
+    "787.e43f9d71.chunk.js.map": "/ConFusion/static/js/787.e43f9d71.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a47e271.css",
-    "static/js/main.f9a50d55.js"
+    "static/css/main.83d9c3e3.css",
+    "static/js/main.f3372357.js"
   ]
 }
