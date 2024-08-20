@@ -4,12 +4,13 @@ import { baseUrl } from '../shared/baseurl';
 import MediaQuery from "react-responsive";
 import { motion, useInView as Fview } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";
+import { Loading } from "./LoadingComponent";
 
 function RenderCard({details}) {
     const navigate = useNavigate()
     const handleClick = () => {
-        localStorage.setItem('activeCategory', 'Sandwiches');  // Set activeCategory in localStorage
-        navigate('/menu');  // Navigate to /menu
+        localStorage.setItem('activeCategory', 'Sandwiches'); 
+        navigate('/menu'); 
       };
 
     return (
@@ -53,7 +54,7 @@ function RenderCard({details}) {
 }
 
 function Home(props) {
-    console.log(props.home.home.slice(0, 2));
+    console.log(props)
     const ref = useRef(null)
     const isInview = Fview(ref, { once: true })
 
@@ -74,7 +75,13 @@ function Home(props) {
           },
         },
       };
-    if (props.home.home.length > 0) {
+
+    if (props.home.isLoading) {
+        return (
+            <Loading/>
+        );
+    }
+    else {
         return(
             <Container style={{maxWidth: "100%", overflow: "hidden", backgroundColor: "rgb(255, 193, 0)"}} className="px-0">
                 <RenderCard details={props.home.home.slice(0, 2)}/>

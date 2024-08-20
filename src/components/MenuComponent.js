@@ -142,11 +142,7 @@ function Menu(props) {
 
     if (props.dishes.isLoading) {
         return (
-            <div className="container">
-                <div className="row">
-                    <Loading />
-                </div>
-            </div>
+            <Loading/>
         );
     } else if (props.dishes.errMess) {
         return (
