@@ -83,7 +83,7 @@ function Order (props) {
 
 const applyGiftCard = async () => {
   try {
-    const response = await axios.post('http://localhost:9000/gifts', { trans_id: giftCardId });
+    const response = await axios.post(baseUrl + 'gifts', { trans_id: giftCardId });
     const giftValue = response.data.value;
     if (giftValue >= total) {
       alert('Gift card value exceeds or matches the total amount');
@@ -106,14 +106,14 @@ const applyGiftCard = async () => {
   
     if (paymentMethod === 'onlinePayment') {
       try {
-        const response = await axios.post('http://localhost:9000/orders/sslPay/', formData);
+        const response = await axios.post(baseUrl + 'orders/sslPay/', formData);
         window.open(response.data.url, '_blank'); // Opens the payment URL in a new tab
       } catch (error) {
         console.error("Payment Error:", error.response ? error.response.data : error.message);
       }
     } else {
       try {
-        const response = await axios.post('http://localhost:9000/orders/cod/', formData);
+        const response = await axios.post(baseUrl + 'orders/cod/', formData);
         console.log('Order Confirmed:', response.data);
       } catch (error) {
         console.error("Could not complete order:", error.response ? error.response.data : error.message);

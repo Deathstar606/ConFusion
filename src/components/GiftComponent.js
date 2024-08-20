@@ -60,7 +60,7 @@ function Gift({gifts}) {
     };
     
     try {
-      const pay = await axios.post('http://localhost:9000/gifts/sslPay/', data);
+      const pay = await axios.post(baseUrl + 'gifts/sslPay/', data);
       window.open(pay.data.url);
     } catch (error) {
       console.log(error.response.data);
