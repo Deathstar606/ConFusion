@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ConFusion/static/css/main.83d9c3e3.css",
-    "main.js": "/ConFusion/static/js/main.f3372357.js",
+    "main.js": "/ConFusion/static/js/main.58f967f2.js",
     "static/js/787.e43f9d71.chunk.js": "/ConFusion/static/js/787.e43f9d71.chunk.js",
     "static/media/pexels-fotios-photos-776538.jpg": "/ConFusion/static/media/pexels-fotios-photos-776538.4ce728183f8d05e2f037.jpg",
     "static/media/pexels-reneasmussen-1581384.jpg": "/ConFusion/static/media/pexels-reneasmussen-1581384.00920011518746ef5b52.jpg",
@@ -14,11 +14,11 @@
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/ConFusion/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "index.html": "/ConFusion/index.html",
     "main.83d9c3e3.css.map": "/ConFusion/static/css/main.83d9c3e3.css.map",
-    "main.f3372357.js.map": "/ConFusion/static/js/main.f3372357.js.map",
+    "main.58f967f2.js.map": "/ConFusion/static/js/main.58f967f2.js.map",
     "787.e43f9d71.chunk.js.map": "/ConFusion/static/js/787.e43f9d71.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.83d9c3e3.css",
-    "static/js/main.f3372357.js"
+    "static/js/main.58f967f2.js"
   ]
 }
